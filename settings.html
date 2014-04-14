@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Aura - Home Automation </title>
+<link rel="stylesheet" type="text/css" href="css/inner-pages.css"/>
+<link rel=StyleSheet href="tab-css/jquery-ui-1.10.4.custom.css" type="text/css" media=screen>
+    <link rel=StyleSheet href="tab-css/main.css" type="text/css" media=screen>
+    <script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.10.4.min.js" type="text/javascript"></script>
+    <script src="js/jquery.rwdImageMaps.min.js" type="text/javascript"></script>
+    <script src="tab-css/main.js" type="text/javascript"></script>
+
+
+
+        
+<body>
+	<div class="dashboard-container">
+      <div class="scence-left-btn">
+    	<div id="logo-bg">
+    	<a href="page2.html"><img src="images/logo_bg.png" alt=""/></a>
+    	</div>
+       </div>
+       
+       <div class="settings">
+       <div class="settings-text">
+                    <img src="images/settings.png" />
+        </div>
+        
+        
+        <div id="settings-tabs">
+						<ul>
+							<li><a href="#tab-floors">Floors</a></li>
+							<li><a href="#tab-rooms">Rooms</a></li>
+							<li><a href="#tab-boards">Boards</a></li>
+							<li><a href="#tab-lights">Lights</a></li>
+						</ul>
+						<div id="tab-floors">
+							<a href="" id="button-new-floor" class="table-new-row">Add new floor</a>
+							<table id="table-floors">
+								<thead>
+									<tr>
+										<td>#</td>
+										<td>Floor Name</td>
+										<td>Floor Level</td>
+										<td>Rooms</td>
+										<td>Action</td>
+									</tr>
+								</thead>
+								<tbody>
+										<tr data-id="1">
+                                            <td>1</td>
+                                            <td>First floor</td>
+                                            <td>Ground</td>
+                                            <td>9</td>
+                                            <td><a href="">Edit</a> | <a href="">Delete</a></td>
+										</tr>
+                                        
+										<tr data-id="2">
+                                            <td>2</td>
+                                            <td>Second floor</td>
+                                            <td>Second</td>
+                                            <td>0</td>
+                                            <td><a href="">Edit</a> | <a href="">Delete</a></td>
+										</tr>
+								</tbody>
+							</table>
+							<form id="form-new-floor" style="display: none">
+								<h1>Add new floor</h1>
+								<p>Floor Name:</p>
+								<input type="text" name="" />
+								<p>Floor Level:</p>
+								<input type="text" name="" />
+								<p>Floor Image:</p>
+								<input type="file" name="" />
+                                <div class="settings-buttons">
+                                    <button id="button-user-7" type="submit">Submit</button>
+                                    <button id="floors-goback">Cancel</button>
+                                </div>
+							</form>
+						</div>
+						<div id="tab-rooms">
+							<a href="" id="button-new-room" class="table-new-row">Add new room</a>
+							<table id="table-rooms">
+								<thead>
+									<tr>
+										<td>#</td>
+										<td>Room Name</td>
+										<td>Room Type</td>
+										<td>Action</td>
+									</tr>
+								</thead>
+								<tbody>
+																		<tr data-id="1">
+										<td>1</td>
+										<td>Bathroom</td>
+										<td>Room</td>
+										<td><a href="">Edit</a> | <a href="">Delete</a></td>
+									</tr>
+																		<tr data-id="2">
+										<td>2</td>
+										<td>Bedroom 1</td>
+										<td>Room</td>
+										<td><a href="">Edit</a> | <a href="">Delete</a></td>
+									</tr>
+																		<tr data-id="3">
+										<td>3</td>
+										<td>Bedroom 2</td>
+										<td>Room</td>
+										<td><a href="">Edit</a> | <a href="">Delete</a></td>
+									</tr>
+																		<tr data-id="4">
+										<td>4</td>
+										<td>Bedroom 3</td>
+										<td>Room</td>
+										<td><a href="">Edit</a> | <a href="">Delete</a></td>
+									</tr>
+																		<tr data-id="5">
+										<td>5</td>
+										<td>Living room</td>
+										<td>Living</td>
+										<td><a href="">Edit</a> | <a href="">Delete</a></td>
+									</tr>
+																		<tr data-id="6">
+										<td>6</td>
+										<td>Kitchen</td>
+										<td>Room</td>
+										<td><a href="">Edit</a> | <a href="">Delete</a></td>
+									</tr>
+																	</tbody>
+							</table>
+							<form id="form-new-room" style="display: none">
+								<h1>Add new room</h1>
+								<p>Room Name:</p>
+								<input type="text" name="" />
+								<p>Room Type:</p>
+								<input type="text" name="" />
+								<p>Floor:</p>
+								<select>
+										<option value="1">First floor</option>
+										<option value="2">Second floor</option>
+								</select>
+								<p>Coordinates: <small>http://www.image-maps.com</small></p>
+
+								<input type="text" name="" />
+                                <div class="settings-buttons">
+                                    <button id="button-user-7" type="submit">Submit</button>
+                                    <button id="rooms-goback">Cancel</button>
+                                </div>
+							</form>
+						</div>
+					  <div id="tab-boards">
+					    <a href="" id="button-new-board" class="table-new-row">Add new board</a>
+					    <table id="table-boards">
+							<thead>
+								<tr>
+									<td>#</td>
+									<td>Name</td>
+									<td>In Room</td>
+									<td>Action</td>
+								</tr>
+							</thead>
+							<tbody>
+																								<tr data-id="1">
+									<td>1</td>
+									<td>Scene 1</td>
+									<td>Living room</td>
+									<td><a href="">Edit</a> | <a href="">Delete</a></td>
+								</tr>
+																<tr data-id="2">
+									<td>2</td>
+									<td>Scene 2</td>
+									<td>Living room</td>
+									<td><a href="">Edit</a> | <a href="">Delete</a></td>
+								</tr>
+																<tr data-id="3">
+									<td>3</td>
+									<td>Scene 3</td>
+									<td>Living room</td>
+									<td><a href="">Edit</a> | <a href="">Delete</a></td>
+								</tr>
+																<tr data-id="4">
+									<td>4</td>
+									<td>Scene 3</td>
+									<td>Living room</td>
+									<td><a href="">Edit</a> | <a href="">Delete</a></td>
+								</tr>
+																<tr data-id="5">
+									<td>5</td>
+									<td>Scene 4</td>
+									<td>Living room</td>
+									<td><a href="">Edit</a> | <a href="">Delete</a></td>
+								</tr>
+															</tbody>
+						</table>
+						<form id="form-new-board" style="display: none">
+							<h1>Add new board</h1>
+							<p>Name:</p>
+							<input type="text" name="" />
+							<p>Room:</p>
+							<select>
+																<option value="1">Bathroom</option>
+																<option value="2">Bedroom 1</option>
+																<option value="3">Bedroom 2</option>
+																<option value="4">Bedroom 3</option>
+																<option value="5">Living room</option>
+																<option value="6">Kitchen</option>
+															</select>
+							<div class="clear20"></div>
+                             <div class="settings-buttons">
+                                <button id="button-user-7" type="submit">Submit</button>
+                                <button id="boards-goback">Cancel</button>
+                             </div>
+						</form>
+					  </div>
+					  <div id="tab-lights">
+					  	<a href="" id="button-new-light" class="table-new-row">Add new light</a>
+					    <table id="table-lights">
+							<thead>
+								<tr>
+									<td>#</td>
+									<td>Name</td>
+									<td>In Room</td>
+									<td>Action</td>
+								</tr>
+							</thead>
+							<tbody>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tbody>
+						</table>
+						<form id="form-new-light" style="display: none">
+							<h1>Add new light</h1>
+							<p>Name:</p>
+							<input type="text" name="" />
+							<p>Room:</p>
+							<select>
+																<option value="1">Bathroom</option>
+																<option value="2">Bedroom 1</option>
+																<option value="3">Bedroom 2</option>
+																<option value="4">Bedroom 3</option>
+																<option value="5">Living room</option>
+																<option value="6">Kitchen</option>
+															</select>
+							<p>Board:</p>
+							<select>
+																<option value="1">Scene 1</option>
+																<option value="2">Scene 2</option>
+																<option value="3">Scene 3</option>
+																<option value="4">Scene 4</option>
+																<option value="5">Scene 5</option>
+															</select>
+							<div class="clear20"></div>
+							 <div class="settings-buttons">
+                                <button id="button-user-7" type="submit">Submit</button>
+								<button id="lights-goback">Cancel</button>
+                             </div>
+						</form>
+					  </div>
+					</div>
+        
+        
+       </div><!-- ============== user profile right div ends here ============== -->
+    </div><!-- ============== dashboard container div ends here ============== -->          
+  
+    
+
+
+
+    
+
+
+             
+</body>
+</html>

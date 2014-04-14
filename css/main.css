@@ -1,0 +1,1097 @@
+
+ul { list-style: none;}
+li { line-height:17px; vertical-align: top; }
+
+b, strong { font-weight: bold; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+code, kbd, pre, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: top; }
+svg:not(:root) { overflow: hidden; }
+form { margin: 0; }
+button, input, select, textarea { 
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+button, input { line-height: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.fullheight { height: 100%;}
+.clear { clear: both; }
+
+/* FORM ELEMENTS */
+input {
+    background: #032d51;
+    border: 5px solid #ffffff;
+    border-radius: 12px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    line-height: 14px;
+}
+input[type=password] {
+    background: #032d51 url(../images/padlock.png) 10px 7px no-repeat;
+    padding: 10px 10px 10px 35px;
+}
+::-webkit-input-placeholder { color:#fff; }
+::-moz-placeholder { color:#fff; }
+:-ms-input-placeholder { color:#fff; }
+input:-moz-placeholder { color:#fff; }
+button {
+    background: #032d51;
+    color: #fff;
+    border: 4px solid #ffffff;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 0 5px 10px 5px;
+    font-size: 18px;
+    line-height: 14px;
+    cursor: pointer;
+}
+.control-checkbox {
+    width: auto;
+    position: relative;
+    margin: 0 15px 15px 0;
+}
+.control-checkbox:checked:before {
+   content: "";
+    width: 11px;
+    height: 11px;
+    background: #032D51;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    left: 1px;
+    border-radius: 10px;
+}
+.control-checkbox:after {
+    content: "";
+    background: #FFF;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ebeced 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebeced));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#ebeced 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#ebeced 100%);
+    position: absolute;
+    text-align: center;
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    vertical-align: middle;
+    border-radius: 30px;
+    border: 2px solid #ADADAD;
+    box-shadow: 0 0 3px #fff;
+}
+label {
+    color: #032d51;
+    font-size: 18px;
+}
+.control-button {
+    background: #167dd4;
+    background: -moz-linear-gradient(top, #2e96ec 0%, #0269bf 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2e96ec), color-stop(100%,#0269bf));
+    background: -webkit-linear-gradient(top, #2e96ec 0%,#0269bf 100%);
+    background: linear-gradient(to bottom, #2e96ec 0%,#0269bf 100%);
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Font346, sans-serif;
+    position: relative;
+    color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #1f7ac7;
+    border: none;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    -webkit-user-select: none;
+    -webkit-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.25);    
+    -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+.control-button:active {
+    position: relative;
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: inset 0 0px 4px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: inset 0 0px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0px 4px rgba(0, 0, 0, 0.7);
+}
+.control-switch {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+    float: left;
+    margin: 15px 0 0 0;
+}
+.control-switch:before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 90px;
+    background: url(../images/switch_bg.png) center center no-repeat, linear-gradient(to bottom, rgba(192, 192, 192, 0.6) 0%, rgba(255, 255, 255, 0.69) 100%);
+    border-radius: 30px;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.22), inset 0 -2px 2px #FFF;
+}
+.control-switch:after {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom, #B6B6B6 0%, #939393 100%);
+    width: 24px;
+    height: 23px;
+    position: absolute;
+    top: 50px;    
+    left: 11px;
+    border-radius: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.97);
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.66);
+    transition: .4s top;
+    cursor: pointer;
+}
+.control-switch:checked:after {
+    top: 10px;
+}
+.control-switch + .switch-indicator {
+    position: relative;
+    clear: both;
+    height: 80px;
+    float: left;
+    display: block;
+    width: 22px;
+    left: 52px;
+    top: 13px;
+    margin: 0 0 30px 0;
+}
+.control-switch + .switch-indicator:before {
+    content: "";
+    width: 13px;
+    background: #585858;
+    display: block;
+    height: 13px;
+    border-radius: 20px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.control-switch + .switch-indicator:after {
+    content: "";
+    width: 11px;
+    border: 2px solid #585858;
+    display: block;
+    height: 11px;
+    border-radius: 20px;
+    position: absolute;
+    left: 5px;
+    top: 45px;
+}
+.control-switch:checked + .switch-indicator:before {
+    background: #279CFF;
+    background: radial-gradient(70% 65%, #279CFF, #36C9FF 60%);
+    box-shadow: inset 0 3px 5px 1px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 5px 2px rgba(39, 156, 255, 0.5);
+    transition: all .5s;
+}
+.control-image-button {
+    width: 49px;
+    height: 49px;
+    display: block;
+    background: url(../images/buttons_map.png) no-repeat;
+    margin: 10px auto;
+}
+.control-metal-button {
+    width: 46px;
+    height: 46px;
+    background: url(../images/metal_btn.png) no-repeat;
+    display: block;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.55);
+    border: 0;
+    border-radius: 100px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    position: relative;
+    float: left;
+    margin: 0 0 0 30px;
+}
+.control-metal-button:before {
+    /*content: "";
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.87);
+    position: absolute;
+    left: -6px;
+    width: 75px;
+    height: 75px;
+    top: -5px;
+    border-radius: 50px;*/
+}
+.control-metal-button:active:before {
+    top: -7px;
+
+}
+.control-metal-button:active {
+    box-shadow: none;
+    top: 2px;
+}
+.modal-button {
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.55), 0 0 6px rgba(0, 179, 254, 0.77);
+    background: url(../images/icon_bulb_on.png) 18px 13px no-repeat, url(../images/metal_btn.png) no-repeat;
+    background-size: 20px 33px, contain;
+    width: 56px;
+    height: 56px;
+}
+.modal-button-disabled {
+    background: url(../images/icon_bulb_off.png) 18px 13px no-repeat, url(../images/metal_btn.png) no-repeat;
+    background-size: 20px 33px, contain;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.55), 0 0 13px rgba(254, 0, 0, 0.75), inset 0 0 13px rgba(254, 0, 0, 0.75);
+}
+.modal-button:before {
+    /*box-shadow: 0 0 10px rgba(0, 179, 254, 0.77);*/
+    width: 70px;
+    height: 70px;
+    left: -7px;
+    top: -7px;
+}
+.modal-button-disabled:before {
+    box-shadow: 0 0 10px rgba(254, 0, 0, 0.75);
+}
+.modal-button:active:before {
+    top: -9px;
+}
+.control-slider {
+    height: 190px;
+    border: 1px solid #171717;
+    background: #252525;
+    width:5px;
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.38);
+}
+.control-slider:before {
+    background: #0B0D0F;
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 2px rgba(247, 247, 247, 0.41);
+}
+.control-slider .ui-slider-handle {
+    width: 23px;
+    height: 23px;
+    background: -moz-linear-gradient(top, #464649 0%, #202023 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#464649), color-stop(100%,#202023));
+    background: -webkit-linear-gradient(top, #464649 0%,#202023 100%);
+    background: -ms-linear-gradient(top, #464649 0%,#202023 100%);
+    background: linear-gradient(to bottom, #464649 0%,#202023 100%);
+    border: none;
+    border-radius: 30px;
+    left: -8px;
+    box-shadow: inset 0px 1px 1px #6B6B6B, 0 2px 1px #000;
+    cursor: pointer;
+}
+.control-slider .ui-slider-handle:after {
+    width: 11px;
+    height: 11px;
+    content: "";
+    background: -moz-radial-gradient(center, ellipse cover, #258db1 0%, #224c99 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#258db1), color-stop(100%,#224c99));
+    background: -webkit-radial-gradient(center, ellipse cover, #258db1 0%,#224c99 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #258db1 0%,#224c99 100%);
+    background: radial-gradient(ellipse at center, #258db1 0%,#224c99 100%);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 1px solid #26B0EB;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #26B0EB;
+}
+.control-slider .ui-slider-range {
+    background: #0179ec;
+    background: -moz-linear-gradient(top, #30d2fd 0%, #0175eb 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#30d2fd), color-stop(100%,#0175eb));
+    background: -webkit-linear-gradient(top, #30d2fd 0%,#0175eb 100%);
+    background: -o-linear-gradient(top, #30d2fd 0%,#0175eb 100%);
+    background: -ms-linear-gradient(top, #30d2fd 0%,#0175eb 100%);
+    background: linear-gradient(to bottom, #30d2fd 0%,#0175eb 100%);
+    box-shadow: 0 0 14px #017CED, 0 0 10px #017CED, inset 0 0 2px rgba(255, 255, 255, 0.35);
+}
+.control-slider-wrap {
+    width: 35px;
+    float: left;
+    height: 190px;
+    /*top: 15px;*/
+    position: relative;
+	margin-right:25px;
+	margin-top:-45px;
+}
+.cs-left .control-slider {
+    float: right;
+	/*margin-left:35px;*/
+}
+.cs-right .control-slider {
+    float: left;
+}
+.cs-indicators {
+    /*top: -10px;*/
+    position: relative;
+}
+.cs-right .cs-indicators {
+    float: right;
+}
+.cs-indicators li {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #0B1113;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 1px #000;
+    margin: 8px 0;
+    position: relative;
+}
+.cs-indicators li:after {
+    width: 6px;
+    height: 6px;
+    content: "";
+    background: -moz-radial-gradient(center, ellipse cover, #258db1 0%, #224c99 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#258db1), color-stop(100%,#224c99));
+    background: -webkit-radial-gradient(center, ellipse cover, #258DB1 0%,#224C99 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #258db1 0%,#224c99 100%);
+    background: radial-gradient(ellipse at center, #258DB1 0%,#224C99 100%);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 1px solid #26B0EB;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #26B0EB;
+    opacity: 0.3;
+    transition: all .5s;
+}
+.cs-indicators li.csi-active:after {
+    opacity: 1;
+}
+/* GENERAL LAYOUT */
+#page-wrap {
+    max-width: 1024px;
+    margin: 0 auto;    
+    position: relative;
+    overflow: hidden;
+}
+.block-50p {
+    width: 50%;
+    float: left;
+}
+.center-align {
+    text-align: center;
+}
+
+/* LOGIN PAGE */
+.page-login {
+    background: url(../images/bg.jpg);
+}
+#login-left {
+    width: 62%;
+    float: left;
+    text-align: center;
+}
+#login-right {
+    width: 38%;
+    float: left;
+}
+#login-logo {
+    margin: 150px auto 0 auto;
+}
+#login-sofa {
+    margin: 80px 0 0 40px;
+}
+#login-footer {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    background: rgba(0, 47, 94, 0.87);
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+}
+#login-form {
+    margin: 70% 0 0 0;
+    padding: 0 45px 0 0;
+}
+#btn-login {
+    float: right;
+}
+#btn-reset {
+    float: left;
+}
+#forgot-pass {
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 10px 0 0 0;
+    clear: both;
+}
+#login-radio-wrap {
+    padding: 10px 0 15px 0;
+}
+
+/* DASHBOARD */
+.page-dash {
+    background: url(../images/bg_inner.jpg);
+}
+#logo-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.dash-side-controls {
+    height: 365px;
+    width: 115px;
+    position: absolute;
+    top: 13%;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+.dash-side-inner {
+    position: relative;
+}
+#controls-left {
+    left: -20px;    
+}
+#controls-right {
+    right: -20px;    
+}
+#controls-left .dash-side-inner {
+    padding: 25px 12px 15px 28px;
+}
+#controls-left .control-button {
+    margin: 6px 0 0 0;
+}
+.triangle-right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 100px;
+    top: 155px;
+    background: -webkit-linear-gradient(bottom left, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 48%,#00457F 48%,#007FEA 54%, #007FEA 100%);
+    background: -moz-linear-gradient(bottom left, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 48%,#00457F 48%,#007FEA 54%, #007FEA 100%);
+    background: linear-gradient(bottom left, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 48%,#00457F 48%,#007FEA 54%, #007FEA 100%);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: inset -3px 3px 4px rgba(0, 0, 0, 0.57);
+    cursor: pointer;
+}
+.triangle-left {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 100px;
+    top: 105px;
+    background: -webkit-linear-gradient(bottom right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 48%,#00457F 48%,#007FEA 54%, #007FEA 100%);
+    background: -moz-linear-gradient(bottom right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 48%,#00457F 48%,#007FEA 54%, #007FEA 100%);
+    background: linear-gradient(bottom right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 48%,#00457F 48%,#007FEA 54%, #007FEA 100%);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.57);
+    cursor: pointer;
+}
+#controls-right .dash-side-inner {
+    padding: 0 28px 0 12px;
+}
+#controls-right .control-image-button {
+    margin: 53px auto;
+}
+#controls-right .control-image-button:after {
+    content: "";
+    width: 65px;
+    height: 1px;
+    background: #007FEA;
+    position: relative;
+    display: block;
+    top: 73px;
+    left: -10px;
+}
+#button-message {
+    background-position: -48px 0px;
+}
+#button-email {
+    background-position: -96px 0px;
+}
+#controls-right #button-email:after {
+    display: none;
+}
+#time-date-widget {
+    width: 225px;
+    height: 65px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    background: rgba(0, 19, 34, 0.77);
+}
+#time-date-widget p {
+    font-size: 10px;
+    color: #e7e7e7;
+    font-family: Font146, sans-serif;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 0 2px 0 #000;
+}
+.tdw-timedate {
+    width: 130px;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    height: 100%;
+    padding: 13px 0;
+    float: left;
+}
+.tdw-ampm {
+    float: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    height: 100%;
+    width: 35px;
+}
+#time-date-widget p.ampm-active {
+    color: #038cff;
+}
+.tdw-am, .tdw-pm {
+    padding: 8px 0;
+}
+.tdw-am {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+#footer-buttons {
+    position: absolute;
+    bottom: 25px;
+    right: 275px;
+}
+#button-settings {
+     background: url(../images/metal_btn_icons.png) 15px 15px no-repeat, url(../images/metal_btn.png) no-repeat;
+}
+#button-profile {
+    background: url(../images/metal_btn_icons.png) -35px 15px no-repeat, url(../images/metal_btn.png) no-repeat;
+}
+
+/* MODAL WINDOW */
+.modal-window {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    right: 10%;
+    bottom: 20px;
+    background: rgba(0, 15, 29, 0.85);
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6), 2px 2px 4px #0283DD;
+    border-radius: 30px;
+    display: none;
+}
+.modal-inner {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.modal-title {
+    color: #00A2FE;
+    border-bottom: 3px solid #00A2FE;
+    width: 80%;
+    margin: 40px auto 0 auto;
+    padding: 3px 0px 10px 20px;
+    background: url(../images/modal_arrows.png) 100px 6px no-repeat;
+}
+.close-modal {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    color: #00A2FE;
+    font-size: 32px;
+    border: 3px solid #00A2FE;
+    padding: 8px;
+    box-shadow: 0 0 3px #00A2FE;
+    border-radius: 7px;
+    text-shadow: 0 0 7px #00A2FE;
+    cursor: pointer;
+    transition: all .3s;
+    font-family: Font146, sans-serif;
+    font-weight: bold;
+}
+.close-modal:hover {
+    box-shadow: 0 0 6px #00A2FE;
+    text-shadow: 0 0 15px #00A2FE;
+}
+
+/* ON/OFF MODAL */
+.on-off-button-wrap {
+    height: 27px;
+    width: 729px;    
+    background: #e90f00;
+    border-top: 2px solid #2a0100;
+    border-bottom: 2px solid #2a0100;
+    box-shadow: 0 0 5px #e90f00;
+    position: absolute;
+    top: 50%;
+    /*left: 0px;*/
+    transition: all .5s;
+	z-index:1;
+}
+.on-off-button-wrap.on-off-active  {
+    background: #0195fc;
+    border-top: 2px solid #022244;
+    border-bottom: 2px solid #022244;
+    box-shadow: 0 0 5px #0195fc;
+}
+.on-off-circle-outter {
+    background: #212931;
+    width: 222px;
+    height: 224px;
+    border-radius: 190px;
+    top: -105px;
+    position: relative;
+    left:255px;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.on-off-circle-glow {
+    background: #03bee7;
+    border-radius: 195px;
+    width: 190px;
+    height: 190px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background: -moz-linear-gradient(top, #fd1900 0%, #cf0100 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fd1900), color-stop(100%,#cf0100));
+    background: -webkit-linear-gradient(top, #fd1900 0%,#cf0100 100%);
+    background: -ms-linear-gradient(top, #fd1900 0%,#cf0100 100%);
+    background: linear-gradient(to bottom, #fd1900 0%,#cf0100 100%);
+    border: 2px solid #701214;
+    box-shadow: 0 0 15px #cf0100;
+    transition: all .5s;
+}
+.on-off-active .on-off-circle-glow {
+    background: -moz-linear-gradient(top, #04e3f7 0%, #006ac9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#04e3f7), color-stop(100%,#006ac9));
+    background: -webkit-linear-gradient(top, #04e3f7 0%,#006ac9 100%);
+    background: -ms-linear-gradient(top, #04e3f7 0%,#006ac9 100%);
+    background: linear-gradient(to bottom, #04e3f7 0%,#006ac9 100%);
+    border: 2px solid #113E78;    
+    box-shadow: 0 0 15px #0080C8;
+}
+.on-off-circle-underbutton {
+    width: 169px;
+    height:169px;
+    background: -moz-radial-gradient(center, ellipse cover, #3b3e47 0%, #191a20 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3b3e47), color-stop(100%,#191a20));
+    background: -webkit-radial-gradient(center, ellipse cover, #3b3e47 0%,#191a20 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #3b3e47 0%,#191a20 100%);
+    background: radial-gradient(ellipse at center, #3b3e47 0%,#191a20 100%);
+    border-radius: 200px;
+    border: 3px solid #09222E;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    box-shadow: inset 0px 1px 2px #733F6F;
+}
+.on-off-button {
+    width: 127px;
+    height: 127px;
+    display: block;
+    border-radius: 200px;
+    position: relative;
+    top: 21px;
+    left: 21px;
+    background: url(../images/off_btn.png) 27px 24px no-repeat, url(../images/on_off_bg.png);
+    box-shadow: 2px 6px 9px #000;
+    transition: all .5s;
+}
+.on-off-active .on-off-button {
+    background: url(../images/on_btn.png) 27px 24px no-repeat, url(../images/on_off_bg.png);
+}
+.on-off-button:active {
+    box-shadow: none;
+    top: 23px;
+}
+
+/* LIVING ROOM MODAL - Inherits the ON/OFF modal styles */
+#livingroom-modal .modal-title {
+    background-position: 210px 6px;
+}
+
+#livingroom-modal .on-off-button-wrap {
+    top: 140px;
+    height: 10px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+#livingroom-modal .on-off-circle-outter {
+    width: 160px;
+    height: 160px;
+    top: -78px;
+    left: 290px;
+}
+#livingroom-modal .on-off-circle-glow {
+    width: 135px;
+    height: 135px;
+    top: 10px;
+    left: 10px;
+}
+#livingroom-modal .on-off-circle-underbutton {
+    width: 120px;
+    height: 120px;
+    top: 5px;
+    left: 5px;
+}
+#livingroom-modal .on-off-button {
+    width: 87px;
+    height: 89px;
+    top: 17px;
+    left: 17px;
+    background: url(../images/off_btn.png) 20px 17px no-repeat, url(../images/on_off_bg.png);
+    background-size: 50px 55px, cover;
+}
+#livingroom-modal .on-off-active .on-off-button {
+    background: url(../images/on_btn.png) 20px 17px no-repeat, url(../images/on_off_bg.png);
+    background-size: 50px 55px, cover;
+}
+#switchboards-holder {
+    position: relative;
+    top: 170px;
+    padding: 0 20px;
+}
+.modal-triangle-left {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-shadow: -3px -3px 4px #007FEA;
+    cursor: pointer;
+    float: left;
+    background: -webkit-linear-gradient(bottom right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 51%,#0063B6 56%,rgba(0, 127, 234, 0.04) 66%, rgba(105, 105, 105, 0) 100%);
+    background: -moz-linear-gradient(bottom right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 51%,#0063B6 56%,rgba(0, 127, 234, 0.04) 66%, rgba(105, 105, 105, 0) 100%);
+    background: linear-gradient(bottom right, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 51%,#0063B6 56%,rgba(0, 127, 234, 0.04) 66%, rgba(105, 105, 105, 0) 100%);
+}
+.modal-triangle-right {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: 3px -3px 4px #007FEA;
+    cursor: pointer;
+    float: left;
+    background: -webkit-linear-gradient(bottom left, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 51%,#0063B6 56%,rgba(0, 127, 234, 0.04) 66%, rgba(105, 105, 105, 0) 100%);
+    background: -moz-linear-gradient(bottom left, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 51%,#0063B6 56%,rgba(0, 127, 234, 0.04) 66%, rgba(105, 105, 105, 0) 100%);
+    background: linear-gradient(bottom left, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 51%,#0063B6 56%,rgba(0, 127, 234, 0.04) 66%, rgba(105, 105, 105, 0) 100%);
+}
+.switchboard {
+    width: 80%;
+    float: left;
+    position: relative;
+}
+.switchboard-navigation {
+    width: 10%;
+    float: left;
+}
+.switchboard-buttons-wrap {
+    width: 470px;
+    float: left;
+	margin-top:-10px;
+	margin-bottom:20px;
+	padding:0px 20px;
+}
+#button-switch-1 {
+    float: left;
+    margin: -10px 0 0 20px
+}
+#button-switch-2 {
+    float: right;
+    margin: -10px 40px 0 0;
+}
+#button-switch-3 {
+    float: left;
+    clear: left;
+    margin: 30px 0 10px 20px;
+}
+#button-switch-4 {
+    float: right;
+    margin: 31px 40px 0 0;
+}
+#button-switch-5 {
+    margin: 0px 0 0 120px;
+}
+
+/* ======= second circuit board =========== */
+
+#button-switch-6 {
+    float: left;
+    margin: 50px 0 40px 20px;
+}
+#button-switch-7 {
+    float: right;
+    margin: 50px 40px 0 0;
+}
+#button-switch-8 {
+   margin: 50px 0 0 120px;
+}
+
+/* ======= third circuit board =========== */
+
+#button-switch-9 {
+    float: left;
+    margin: 15px 0 0 20px;
+}
+#button-switch-10 {
+    float: right;
+    margin: 15px 40px 0 0;
+}
+#button-switch-11 {
+	float:left;
+   margin: 15px 0 0 120px;
+}
+#button-switch-12 {
+    float: right;
+    margin: 15px 40px 0 75px;
+}
+#button-switch-13 {
+    float: right;
+    margin: 15px 45px 0 0;
+}
+#button-switch-14 {
+	float:left;
+   margin: 15px 0 0 20px;
+}
+
+/* =======fourth circuit board =========== */
+#button-switch-15 {
+   margin: 50px 0 40px 260px;
+}
+
+/* =======sixth circuit board =========== */
+#button-switch-16 {
+    float: left;
+    margin: 50px 0 40px 140px
+}
+#button-switch-17 {
+    float: right;
+    margin: 50px 40px 40px 0;
+}
+
+/* =======eigth circuit board =========== */
+#button-switch-18 {
+   float: left;
+   margin:50px 0 40px 20px
+}
+#button-switch-19 {
+   float: left;
+   margin: 50px 0px 40px 63px;
+}
+#button-switch-20 {
+    float: left;
+    margin: 50px 0 40px 63px
+}
+#button-switch-21 {
+   float: left;
+   margin: 50px 0px 40px 63px;
+}
+
+/* =======nine circuit board =========== */
+#button-switch-22 {
+   float: left;
+   margin:15px 0 0 20px
+}
+#button-switch-23 {
+   float: left;
+   margin: 15px 0px 0 63px;
+}
+#button-switch-24 {
+    float: left;
+    margin: 15px 0 0 63px
+}
+#button-switch-25 {
+   float: left;
+   margin: 15px 0px 0 63px;
+}
+#button-switch-26 {
+   float: left;
+   margin:25px 0 0 20px
+}
+#button-switch-27 {
+   float: left;
+   margin: 25px 0px 0 63px;
+}
+#button-switch-28 {
+    float: left;
+    margin: 25px 0 0 63px
+}
+#button-switch-29 {
+   float: left;
+   margin: 25px 0px 0 63px;
+}
+
+/* =======tenth circuit board =========== */
+
+#button-switch-30 {
+   float: left;
+   margin:15px 0 0 20px
+}
+#button-switch-31 {
+   float: left;
+   margin: 65px 0px 0 42px;
+}
+#button-switch-32 {
+    float: left;
+    margin: 65px 0 0 42px
+}
+#button-switch-33 {
+   float: left;
+   margin: 65px 0px 0 42px;
+}
+#button-switch-34 {
+   float: left;
+   margin:15px 0 0 42px
+}
+#button-switch-35 {
+   float: left;
+   margin: 85px 0px 0 -450px;
+}
+#button-switch-36 {
+   float: left;
+   margin: 15px 0 0 42px
+}
+
+
+#scenes-holder {
+   position: absolute;
+   margin-top:255px;
+     /*bottom: 40px;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+	margin-bottom:65px;
+	*/
+	
+}
+
+#scene-buttons-holder {
+    /*width: 82%;*/
+    /*float: left;*/
+	width:440px;
+	/*margin:0px auto;*/
+	margin-left:95px;
+	margin-top:45px;
+}
+
+.scenes-switchboard-buttons-wrap-top{
+	width: 550px;
+    float: left;
+	vertical-align:central;
+	margin-left:5px;
+}
+
+.scenes-switchboard-buttons-wrap{
+	width: 530px;
+    float: left;
+	vertical-align:central;
+	margin-left:120px;
+}
+
+.scenes-switchboard-buttons-wrap-top h2{
+	color:#666;
+	font-size:18px;
+	text-align:left;
+	margin:10px 0px 55px 0px;
+	}	
+	
+.scenes-navigation {
+    width: 9%;
+    float: left;
+}
+.scene-button:before {
+
+    width: 55px;
+    height: 55px;
+    border: 2px solid #c9f1ef;
+    display: block;
+    box-shadow: 0 0 20px rgba(0, 179, 254, 0.77), inset 0 0 20px rgba(0, 179, 254, 0.77);
+    border-radius: 100px;
+    position: relative;
+    content: "";
+    top: -9px;
+    left: -9px;
+}
+.scene-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #090F13;
+    background: -moz-radial-gradient(center, ellipse cover, #090f13 0%, #1a2f3d 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#090f13), color-stop(100%,#1a2f3d));
+    background: -webkit-radial-gradient(center, ellipse cover, #090F13 0%,#1A2F3D 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #090f13 0%,#1a2f3d 100%);
+    background: radial-gradient(ellipse at center, #090F13 0%,#1A2F3D 100%);
+    border: 2px solid #CCF2F0;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 179, 254, 0.77), inset 0 0 10px rgba(0, 179, 254, 0.77);
+    margin: 0 20px;
+    float: left;
+}
+.scene-button:hover:before {
+    box-shadow: 0 0 30px rgba(0, 179, 254, 0.77), inset 0 0 20px rgba(0, 179, 254, 0.77);
+}
+.scene-button:hover {
+    box-shadow: 0 0 20px rgba(0, 179, 254, 0.77), inset 0 0 20px rgba(0, 179, 254, 0.77);
+}
+.scene-button > span {
+    font-size: 17px;
+    color: #31D7FF;
+    font-family: Font146;
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    letter-spacing: -3px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #31D7FF;
+}
+.scene-button-active {
+    width: 50px;
+    height: 50px;
+    margin: -12px 20px 0 20px;
+}
+.scene-button-active:before {
+    width: 65px;
+    height:65px;
+}
+.scenes-navigation .modal-triangle-left, .scenes-navigation .modal-triangle-right {
+    top: 14px;
+    width: 30px;
+    height: 30px;
+}
+.scene-button-active > span {
+    font-size: 24px;
+    top: 17px;
+    left: 15px;
+}
+.scenes-navigation .modal-triangle-right {
+    left: 0;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><br />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Aura - Home Automation </title>
+
+<link rel="stylesheet" type="text/css" href="css/indexstyle.css"/>
+<link rel=StyleSheet href="css/jquery-ui-1.10.4.custom.css" type="text/css" media=screen>
+<link rel="StyleSheet" href="css/main.css" type="text/css" media=screen>
+
+
+<script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.4.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+<!-- ==== slider scripts =========== -->
+<link rel="stylesheet" href="css/jquery-anyslider.css">
+
+        
+<body>
+	<div class="dashboard-container">
+      <div class="scence-left-btn">
+    	<div id="logo-bg">
+    	<img src="images/logo_bg.png" alt=""/>
+    	</div>
+       </div>
+       
+       <div class="scence-right-btn">
+       	<div class="scence-top-btn">
+        	<h2>Rooms</h2>
+        <div class="slider-wrapper">
+			<div class="slider slider2">
+				<div>
+					<div class="scenes-switchboard-buttons-wrap">
+				<a  class="showSingle" data-target="1"><div class="scene-button"><span>R1</span></div></a>
+				<a  class="showSingle" data-target="2"><div class="scene-button"><span>R2</span></div></a>
+				<a  class="showSingle" data-target="3"><div class="scene-button"><span>R3</span></div></a>
+				<a  class="showSingle" data-target="4"><div class="scene-button"><span>R4</span></div></a>
+				<a  class="showSingle" data-target="5"><div class="scene-button"><span>R5</span></div></a>
+					</div>
+				</div>
+		<div>
+
+					Nothing to see here. Move along.
+
+				</div>
+
+			</div>
+
+       		</div><!-- ============== slideshow div ends here ============== -->
+	</div>		
+
+ 
+ 
+ 	<div class="scence-bottom-btn">
+    <h2>Scenes</h2>
+		<div class="switchboard-buttons-wrap">
+        <div id="div1" class="targetDiv">
+        	<div class="scenes-switchboard-buttons-wrap">
+							<div class="scene-button"><span>S1</span></div>
+							<div class="scene-button"><span>S2</span></div>
+							<div class="scene-button scene-button-active"><span>S3</span></div>
+							<div class="scene-button"><span>S4</span></div>
+							<div class="scene-button"><span>S5</span></div>
+			</div>
+       </div>
+       
+        <div id="div2" class="targetDiv">
+        	<div class="scenes-switchboard-buttons-wrap">
+							<div class="scene-button"><span>S6</span></div>
+							<div class="scene-button"><span>S7</span></div>
+							<div class="scene-button scene-button-active"><span>S8</span></div>
+							<div class="scene-button"><span>S9</span></div>
+							<div class="scene-button"><span>S10</span></div>
+			</div>
+        </div>
+        
+        <div id="div3" class="targetDiv">Lorum Ipsum 3</div>
+        <div id="div4" class="targetDiv">Lorum Ipsum 4</div>
+        <div id="div5" class="targetDiv">Lorum Ipsum 5</div>
+    	</div>
+        </div>
+    
+        </div><!-- ============== scence-right-btn div ends here ============== -->
+    </div><!-- ============== dashboard container div ends here ============== -->          
+  
+    
+
+
+
+    
+
+<!-- Script includes -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.anyslider.js"></script>
+	<script>
+	$(function () {
+		$('.slider1').AnySlider({
+			animation: 'fade',
+			interval: 3000,
+			rtl: true,
+			showControls: false,
+			startSlide: 2
+		});
+
+		$('.slider2').AnySlider({
+			easing: 'easeOutBounce',
+			interval: 0,
+			keyboardNav: false,
+			speed: 1500
+		});
+	});
+	</script>
+ 
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$('.showSingle').on('click', function () {
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $('.targetDiv').hide();
+    $('#div' + $(this).data('target')).show();
+});
+$('.showSingle').first().click();
+
+});//]]>  
+
+</script>
+             
+</body>
+</html>

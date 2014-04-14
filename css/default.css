@@ -1,0 +1,45 @@
+.jContent {
+			width: 100%;
+			min-height:370px;
+		}
+
+		
+		
+		
+		.jContent div.slides{
+		
+			min-height: 370px;
+			/*border: 5px solid #cccccc;*/
+		}
+		
+		.jContent p.title{
+		
+			padding: 10px 20px 0px 25px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.jContent p.txt{
+		
+			/*padding: 10px 20px 0px 20px;
+			font-size: 14px;
+			line-height: 16px;*/
+		}
+
+		.jContent p.txt img{
+		
+			float: left;
+			display: block;
+			/*border: 5px solid #ffffff;
+			margin: 0px 15px 5px 0px;*/
+		}
+		
+		ul.text{
+			margin-top: 30px;
+		}
+		
+#wrapper{
+	width: 1024px;
+	margin: 0px auto 0px auto;
+}
+

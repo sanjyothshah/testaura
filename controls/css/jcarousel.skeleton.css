@@ -1,0 +1,116 @@
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+
+.sceneces-slider-btn {
+	width:50px;
+	height:auto;
+	margin:0px auto;
+	/*background-color:#06F;
+	font-size:48px;
+	text-shadow: 0 0 18px #0a54b0;
+	color:#06F;*/
+	margin-top:-20px;
+	margin-left:270px;
+	font-size:48px;
+	color:#075697;
+	text-decoration:none;
+/*	position:absolute;
+	left:0px;
+	top:120px;*/
+	-webkit-text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    outline: none;
+	}
+
+
+
+.jcarousel-main{
+	width:420px;
+	height:auto;
+	padding:0px 7px;
+	/*background-color:#9F0;*/
+	margin-left:65px;
+	margin-top:-10px;
+	position:relative;
+	}
+
+.jcarousel-main-switchboard{
+	width:420px;
+	height:auto;
+	padding:0px 7px;
+	/*background-color:#9F0;*/
+	margin-left:35px;
+	margin-top:-10px;
+	position:relative;
+	}
+	
+
+.left_arrow,
+.right_arrow {
+	font-size:50px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+	text-decoration:none;
+    margin-top: -30px; /* half the height of the arrows */
+    /*background: #1760ab;*/
+	-webkit-text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    -moz-text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+	color:#0997fa;
+}
+
+.left_arrow {
+    left: -20px; /* the width of the arrows to keep them outside */
+}
+
+.right_arrow {
+    right: -20px; /* the width of the arrows to keep them outside */
+}
+.jcarousel {
+    /*position: relative;
+    overflow:hidden;
+	margin-top:10px;
+	height:75px;
+	padding-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+	width:425px;
+	margin-left:65px;*/
+	/*padding:20px;*/
+	/*background-color:red;*/
+	overflow:hidden;
+	position:relative;
+	height:70px;
+	padding-top:30px;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 10000em;
+    position: relative;
+	
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
